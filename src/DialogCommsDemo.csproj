@@ -73,7 +73,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="DialogResultMessage.cs" />
+    <Compile Include="ViewModels\DialogResultMessage.cs" />
     <Compile Include="Interfaces\IDialogConsumer.cs" />
     <Compile Include="ViewModels\DialogViewModelBase.cs" />
     <Compile Include="ViewModels\SubDialogViewModel.cs" />

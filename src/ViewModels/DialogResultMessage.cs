@@ -1,7 +1,7 @@
 ﻿using DialogCommsDemo.Interfaces;
 using GalaSoft.MvvmLight.Messaging;
 
-namespace DialogCommsDemo
+namespace DialogCommsDemo.ViewModels
 {
     public class DialogResultMessage : MessageBase
     {
