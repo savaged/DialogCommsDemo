@@ -47,6 +47,10 @@ namespace DialogCommsDemo.ViewModels
         /// _dialogViewModel.DialogClosed += OnDialogClosed;
         /// which can do something like:
         /// bool? result = e.DialogResult;
+        /// Alternatively the event could be wired in the 
+        /// RelayCommand event, however care is needed to 
+        /// ensure it doesn't get re-wired on each event by
+        /// unwiring it in the OnDialogClosed event handler.
         /// </summary>
         private void OnShowDialog()
         {
