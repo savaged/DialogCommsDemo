@@ -4,7 +4,7 @@ using System;
 
 namespace DialogCommsDemo.ViewModels
 {
-    public abstract class DialogViewModelBase : ViewModelBase, IDialogViewModel
+    public abstract class DialogViewModelBase : ViewModelBase, IModalDialogViewModel
     {
         private bool? _dialogResult;
 

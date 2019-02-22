@@ -78,7 +78,7 @@
     <Compile Include="ViewModels\DialogViewModelBase.cs" />
     <Compile Include="Interfaces\IDialogClosedEventArgs.cs" />
     <Compile Include="ViewModels\SubDialogViewModel.cs" />
-    <Compile Include="Interfaces\IDialogViewModel.cs" />
+    <Compile Include="Interfaces\IModalDialogViewModel.cs" />
     <Compile Include="Views\Dialog.xaml.cs">
       <DependentUpon>Dialog.xaml</DependentUpon>
     </Compile>
