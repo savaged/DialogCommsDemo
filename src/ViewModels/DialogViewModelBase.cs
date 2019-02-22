@@ -49,7 +49,7 @@ namespace DialogCommsDemo.ViewModels
         {
             var handler = DialogClosed;
             var args = new DialogClosedEventArgs(DialogResult);
-            handler?.Invoke(this, (IDialogClosedEventArgs)args);
+            handler?.Invoke(this, args);
         }
         public event EventHandler<IDialogClosedEventArgs> DialogClosed = delegate { };
     }
