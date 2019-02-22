@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogCommsDemo", "DialogCommsDemo\DialogCommsDemo.csproj", "{EB3577C8-A695-4C3E-957A-2E8676951A19}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogCommsDemo", "src\DialogCommsDemo.csproj", "{EB3577C8-A695-4C3E-957A-2E8676951A19}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{697C06F3-B5E1-4474-98EF-22D8221EBF66}"
 	ProjectSection(SolutionItems) = preProject
