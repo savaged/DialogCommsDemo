@@ -4,6 +4,17 @@ using System;
 
 namespace DialogCommsDemo.ViewModels
 {
+    /// <summary>
+    /// When implementing this don't forget to include the changes to the
+    /// dialog Window - add a Closing event like this:
+    /// void OnClosing(object sender, CancelEventArgs e)
+    /// {
+    ///     if (DataContext is IDialogResultViewModel dialog)
+    ///     {
+    ///        e.Cancel = dialog.OnClosing();
+    ///     }
+    /// }
+    /// </summary>
     public abstract class DialogResultViewModelBase : ViewModelBase, IDialogResultViewModel
     {
         private bool? _dialogResult;
