@@ -3,4 +3,4 @@ Reference for using MvvmDialogs but without using modal dialogs and still gettin
 
 ## Dependencies
 * MvvmDialogs
-* MvvmLightStd
+* MvvmLightLibs
