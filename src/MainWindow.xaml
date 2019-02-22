@@ -18,8 +18,7 @@
         <Separator Margin="20"/>
         <Button Content="Another Dialog" Height="25" Width="120" 
                 Command="{Binding ShowAnotherDialogCmd}"/>
-
-        <Button Content="Modal Dialog" Height="25" Width="150" 
+        <Button Content="Modal Dialog" Height="25" Width="150" Margin="10"
                 Command="{Binding ShowModalDialogCmd}"/>
     </StackPanel>
 </Window>
