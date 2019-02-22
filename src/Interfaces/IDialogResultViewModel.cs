@@ -1,8 +1,9 @@
-﻿using System;
+﻿using MvvmDialogs;
+using System;
 
 namespace DialogCommsDemo.Interfaces
 {
-    public interface IDialogResultViewModel : MvvmDialogs.IModalDialogViewModel
+    public interface IDialogResultViewModel : IModalDialogViewModel
     {
         bool OnClosing();
 
