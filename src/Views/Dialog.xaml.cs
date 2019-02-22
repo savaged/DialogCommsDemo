@@ -13,7 +13,7 @@ namespace DialogCommsDemo.Views
 
         private void OnClosing(object sender, CancelEventArgs e)
         {
-            if (DataContext is IModalDialogViewModel dialog)
+            if (DataContext is IDialogResultViewModel dialog)
             {
                 e.Cancel = dialog.OnClosing();
             }

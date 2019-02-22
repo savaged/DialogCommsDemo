@@ -4,11 +4,11 @@ using System;
 
 namespace DialogCommsDemo.ViewModels
 {
-    public abstract class DialogViewModelBase : ViewModelBase, IModalDialogViewModel
+    public abstract class DialogResultViewModelBase : ViewModelBase, IDialogResultViewModel
     {
         private bool? _dialogResult;
 
-        public DialogViewModelBase(IDialogConsumer owner)
+        public DialogResultViewModelBase(IDialogConsumer owner)
         {
             Owner = owner;
             DialogResult = false;

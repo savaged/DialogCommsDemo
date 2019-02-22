@@ -2,7 +2,7 @@
 
 namespace DialogCommsDemo.Interfaces
 {
-    public interface IModalDialogViewModel : MvvmDialogs.IModalDialogViewModel
+    public interface IDialogResultViewModel : MvvmDialogs.IModalDialogViewModel
     {
         bool OnClosing();
 

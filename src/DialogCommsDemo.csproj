@@ -76,10 +76,10 @@
     <Compile Include="ViewModels\AnotherDialogViewModel.cs" />
     <Compile Include="ViewModels\DialogClosedEventArgs.cs" />
     <Compile Include="Interfaces\IDialogConsumer.cs" />
-    <Compile Include="ViewModels\DialogViewModelBase.cs" />
+    <Compile Include="ViewModels\DialogResultViewModelBase.cs" />
     <Compile Include="Interfaces\IDialogClosedEventArgs.cs" />
     <Compile Include="ViewModels\SubDialogViewModel.cs" />
-    <Compile Include="Interfaces\IModalDialogViewModel.cs" />
+    <Compile Include="Interfaces\IDialogResultViewModel.cs" />
     <Compile Include="Views\AnotherDialog.xaml.cs">
       <DependentUpon>AnotherDialog.xaml</DependentUpon>
     </Compile>

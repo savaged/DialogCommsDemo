@@ -4,7 +4,7 @@ using MvvmDialogs;
 
 namespace DialogCommsDemo.ViewModels
 {
-    public class DialogViewModel : DialogViewModelBase, IDialogConsumer
+    public class DialogViewModel : DialogResultViewModelBase, IDialogConsumer
     {
         private readonly SubDialogViewModel _dialogViewModel;
         private readonly IDialogService _dialogService;
