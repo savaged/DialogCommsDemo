@@ -21,10 +21,14 @@ namespace DialogCommsDemo.ViewModels
 
             ShowDialogCmd = new RelayCommand(OnShowDialog);
 
+            ShowAnotherDialogCmd = new RelayCommand(OnShowAnotherDialog);
+
             _dialogViewModel.DialogClosed += OnDialogClosed;
         }
 
         public RelayCommand ShowDialogCmd { get; }
+
+        public RelayCommand ShowAnotherDialogCmd { get; }
 
         public string DialogOutput
         {
@@ -35,6 +39,11 @@ namespace DialogCommsDemo.ViewModels
         private void OnShowDialog()
         {
             _dialogService.Show(this, _dialogViewModel);
+        }
+
+        private void OnShowAnotherDialog()
+        {
+            _dialogService.Show(this, new AnotherDialogViewModel(this));
         }
 
         private void OnDialogClosed(object sender, IDialogClosedEventArgs e)

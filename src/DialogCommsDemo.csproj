@@ -73,12 +73,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ViewModels\AnotherDialogViewModel.cs" />
     <Compile Include="ViewModels\DialogClosedEventArgs.cs" />
     <Compile Include="Interfaces\IDialogConsumer.cs" />
     <Compile Include="ViewModels\DialogViewModelBase.cs" />
     <Compile Include="Interfaces\IDialogClosedEventArgs.cs" />
     <Compile Include="ViewModels\SubDialogViewModel.cs" />
     <Compile Include="Interfaces\IModalDialogViewModel.cs" />
+    <Compile Include="Views\AnotherDialog.xaml.cs">
+      <DependentUpon>AnotherDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Dialog.xaml.cs">
       <DependentUpon>Dialog.xaml</DependentUpon>
     </Compile>
@@ -88,6 +92,10 @@
     <Compile Include="Views\SubDialog.xaml.cs">
       <DependentUpon>SubDialog.xaml</DependentUpon>
     </Compile>
+    <Page Include="Views\AnotherDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Dialog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
