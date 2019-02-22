@@ -1,5 +1,6 @@
 ﻿using DialogCommsDemo.Interfaces;
 using GalaSoft.MvvmLight;
+using System;
 
 namespace DialogCommsDemo.ViewModels
 {
@@ -24,13 +25,32 @@ namespace DialogCommsDemo.ViewModels
 
         public IDialogConsumer Owner { get; }
 
-        public bool OnClosing()
+        /// <summary>
+        /// Override to return bool for Window event
+        /// void OnClosing(object sender, CancelEventArgs e)
+        /// {
+        ///    if (DataContext is IDialogViewModel dialog)
+        ///    {
+        ///       e.Cancel = dialog.OnClosing();
+        ///    }
+        /// }
+        /// </summary>
+        /// <returns></returns>
+        public virtual bool OnClosing()
         {
             var cancel = false;
 
-            MessengerInstance.Send(new DialogResultMessage(this), GetType().Name);
+            RaiseDialogClosed();
 
             return cancel;
         }
+
+        private void RaiseDialogClosed()
+        {
+            var handler = DialogClosed;
+            var args = new DialogClosedEventArgs(DialogResult);
+            handler?.Invoke(this, (IDialogClosedEventArgs)args);
+        }
+        public event EventHandler<IDialogClosedEventArgs> DialogClosed = delegate { };
     }
 }

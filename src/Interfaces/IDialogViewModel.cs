@@ -1,4 +1,5 @@
 ﻿using MvvmDialogs;
+using System;
 
 namespace DialogCommsDemo.Interfaces
 {
@@ -7,5 +8,7 @@ namespace DialogCommsDemo.Interfaces
         bool OnClosing();
 
         IDialogConsumer Owner { get; }
+
+        event EventHandler<IDialogClosedEventArgs> DialogClosed;
     }
 }

@@ -21,8 +21,7 @@ namespace DialogCommsDemo.ViewModels
 
             ShowDialogCmd = new RelayCommand(OnShowDialog);
 
-            MessengerInstance.Register<DialogResultMessage>(
-                this, nameof(DialogViewModel), OnDialogClosed);
+            _dialogViewModel.DialogClosed += OnDialogClosed;
         }
 
         public RelayCommand ShowDialogCmd { get; }
@@ -38,9 +37,9 @@ namespace DialogCommsDemo.ViewModels
             _dialogService.Show(this, _dialogViewModel);
         }
 
-        private void OnDialogClosed(DialogResultMessage m)
+        private void OnDialogClosed(object sender, IDialogClosedEventArgs e)
         {
-            DialogOutput = m.DialogResult?.ToString();
+            DialogOutput = e.DialogResult?.ToString();
         }
     }
 }
